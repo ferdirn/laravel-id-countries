@@ -12,18 +12,20 @@ Laravel ID Countries is a package for Laravel to supply all countries data to ta
 Add `ferdirn/laravel-id-countries` to `composer.json`.
 
     "ferdirn/laravel-id-countries": "dev-master"
-or
+
+or in console type command
+
     composer require ferdirn/laravel-id-countries:dev-master
 
 Run `composer update` to pull down the latest version of laravel packages.
 
-Edit `app/config/app.php` and add the `provider` and `filter`
+Edit `app/config/app.php` file and add to `providers`
 
     'providers' => array(
         'Ferdirn\Countries\CountriesServiceProvider',
     )
 
-Now add the alias.
+also add to 'aliases'
 
     'aliases' => array(
         'Countries' => 'Ferdirn\Countries\CountriesFacade',
@@ -32,22 +34,27 @@ Now add the alias.
 
 ## Model
 
-You can start by publishing the configuration. This is an optional step, it contains the table name and does not need to be altered. If the default name `countries` suits you, leave it. Otherwise run the following command
+If you want to edit the configuration then publish the config. This is an optional step and unrecommended to do, it will show the table name and you do not need to alter it if you do not know what you are doing. The default table name is `countries`, if it suits you, leave it. But if you know what you are doing, you can run the following command
 
     $ php artisan config:publish ferdirn/laravel-id-countries
 
-Next generate the migration file:
+
+Then you need to generate the migration file. Run the following command:
 
     $ php artisan countries:migration
 
-It will generate the `<timestamp>_create_countries_table.php` migration and the `CountriesSeeder.php` seeder. To make sure the data is seeded insert the following code in the `seeds/DatabaseSeeder.php`
+This process will generate `<timestamp>_create_countries_table.php` migration file and a `CountriesSeeder.php` seed file.
+
+Insert the following code in the `seeds/DatabaseSeeder.php`
 
     //Seed the countries
     $this->call('CountriesSeeder');
     $this->command->info('Seeded the countries!');
 
-You may now run it with the artisan migrate command:
+Finally, you can run the artisan migrate command with seed option to include the seed data:
 
     $ php artisan migrate --seed
 
-After running this command the filled countries table will be available
+Now you have a table 'countries' with all country data inside the table.
+
+Congratulation!
