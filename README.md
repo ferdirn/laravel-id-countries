@@ -1,4 +1,4 @@
-# Laravel Countries
+# Laravel ID Countries
 
 [![Total Downloads](https://poser.pugx.org/ferdirn/laravel-id-countries/downloads.svg)](https://packagist.org/packages/ferdirn/laravel-id-countries)
 [![Latest Stable Version](https://poser.pugx.org/ferdirn/laravel-id-countries/v/stable.svg)](https://packagist.org/packages/ferdirn/laravel-id-countries)
