@@ -4,7 +4,7 @@
 [![Latest Stable Version](https://poser.pugx.org/ferdirn/laravel-id-countries/v/stable.svg)](https://packagist.org/packages/ferdirn/laravel-id-countries)
 [![Latest Unstable Version](https://poser.pugx.org/ferdirn/laravel-id-countries/v/unstable.svg)](https://packagist.org/packages/ferdirn/laravel-id-countries)
 
-Laravel ID Countries is a package for Laravel to supply all countries data to table countries including name, iso country code, capital, currency, and calling code.
+Laravel ID Countries is a package for Laravel to supply all countries data to table countries including country name, iso country code, capital, currency, and calling code.
 
 
 ## Installation
