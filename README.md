@@ -55,6 +55,4 @@ Finally, you can run the artisan migrate command with seed option to include the
 
     $ php artisan migrate --seed
 
-Now you have a table 'countries' with all country data inside the table.
-
-Congratulation!
+Now you have a table 'countries' with all country data inside the table. Congratulation!
