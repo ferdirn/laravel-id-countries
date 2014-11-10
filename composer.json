@@ -1,6 +1,6 @@
 {
 	"name" : "ferdirn/laravel-id-countries",
-	"description" : "Laravel ID Countries is a package for Laravel to supply all countries data to table countries including name, iso country code, capital, currency, and calling code.",
+	"description" : "Laravel ID Countries is a package for Laravel to supply all countries data to table countries including country name, iso country code, capital, currency, and calling code.",
 	"type" : "laravel-package",
 	"authors" : [{
 			"name" : "Ferdi Ramdhon",
