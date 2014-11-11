@@ -25,7 +25,7 @@ class CountriesSeeder extends Seeder {
                 'citizenship' => ((isset($country['citizenship'])) ? $country['citizenship'] : null),
                 'currency' => ((isset($country['currency'])) ? $country['currency'] : null),
                 'currency_code' => ((isset($country['currency_code'])) ? $country['currency_code'] : null),
-                'calling_code' => $country['calling_code']
+                'calling_code' => ((isset($country['calling_code'])) ? $country['calling_code'] : null)
             ));
         }
     }
