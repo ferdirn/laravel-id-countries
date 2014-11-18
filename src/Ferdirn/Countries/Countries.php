@@ -10,7 +10,7 @@ class Countries extends \Eloquent {
 
 	/**
 	 * @var string
-	 * Path to the directory containing countries data.
+	 * Countries data.
 	 */
 	protected $countries;
 
